@@ -1,10 +1,9 @@
-import { Button } from "@/components/ui/button"
+import SkillsSection from "@/components/project/SkillsSection";
 
-export default  async function AboutPage() {
-return (
-  <div className="flex flex-col">
-    <Button>About Page</Button>
-  </div>
-
+export default async function AboutPage() {
+  return (
+    <div className="flex flex-col">
+      <SkillsSection />
+    </div>
   );
 }

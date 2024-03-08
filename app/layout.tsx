@@ -5,9 +5,14 @@ import { ThemeProvider } from "@/components/theme-provider";
 import Header from "@/components/Header/Header";
 import Head from "next/head";
 import Footer from "@/components/Footer/Footer";
+import { Poppins } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
-
+const poppins = Poppins({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-poppins",
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+});
 export const metadata: Metadata = {
   title: "My Portfolio",
   description: "Amit Paswan Portfolio",
@@ -19,7 +24,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html className={`${poppins.variable}`} lang="en" suppressHydrationWarning>
       <Head>
         <title>Home Page</title>
         <meta name="description" content="Home page of Portfolio" />

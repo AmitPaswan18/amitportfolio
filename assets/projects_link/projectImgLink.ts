@@ -9,4 +9,3 @@ export const imageSources = [
     "https://res.cloudinary.com/dyvg9wbh8/image/upload/v1698418675/Screenshot_2023-10-27_080654_pzpwpb.png",
     "https://res.cloudinary.com/diy2fslg8/image/upload/v1692555662/Portfolio%20Projects/Screenshot_14_kaw9av.png"
 ];
-
